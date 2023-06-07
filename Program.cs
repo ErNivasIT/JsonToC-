@@ -12,6 +12,10 @@ public class Program
     static List<ContentHierarchy> contentHierarchies = new List<ContentHierarchy>();
     static void Main(string[] args)
     {
+        string pageName = "index.html";
+        string pageNameWithOutExtension = pageName.Replace(".html", "");
+        
+        
         PageData pageData = new PageData();
         string jsonContent = File.ReadAllText("D:\\Git Projects\\JsonCSharp\\Json_2.json");
         var res = JsonDocument.Parse(jsonContent);
@@ -21,17 +25,18 @@ public class Program
 
         List<Region> lstRegions = new List<Region>();
 
-        var result = DirSearch("D:\\Git Projects\\JsonCSharp\\FAF\\Index");
+        var result = DirSearch("D:\\Git Projects\\JsonCSharp\\FAF\\"+ pageNameWithOutExtension);
 
         foreach (ContentHierarchy item in contentHierarchies)
         {
-            Region region = new Region() { Name=item.ContainerName};   
-
-            if (item.ContentType == "Entity")
+            if(item.ContentType=="Region")
             {
-
+                lstRegions.Add(new Region() { Name = item.ContentName });
+            }
+            else if (item.ContentType == "Entity")
+            {
+                Region region=lstRegions.Where(p=>p.Name==item.ContainerName).FirstOrDefault();
                 ClassInfo classInfo = ParseCSharpFile("D:\\Git Projects\\JsonCSharp\\FAF\\Index\\" + item.ContainerName + "\\" + item.ContentName);
-                Type entity = Type.GetType(classInfo.Namespace + "." + classInfo.ClassName);
 
                 JsonElement entityFound;
                 var r = rss.GetProperty("Regions").EnumerateArray()
@@ -51,10 +56,12 @@ public class Program
                     JsonElement itemListElement = default;
                     JsonElement _type = default;
                     JsonElement _values = default;
-
+                    JsonElement _binaryContent = default;
                     myEntityName
                         .FirstOrDefault()
                         .TryGetProperty("Content", out content);
+                    
+                    Type entity = Type.GetType(classInfo.Namespace + "." + classInfo.ClassName);
 
 
                     if (content.ValueKind != JsonValueKind.Undefined)
@@ -69,7 +76,7 @@ public class Program
                             {
                                 itemListElement.TryGetProperty("$values", out _values);
 
-                                if (_values.ValueKind != JsonValueKind.Undefined)
+                                if (_values.ValueKind != JsonValueKind.Undefined && _values.ValueKind==JsonValueKind.Array)
                                 {
                                     List<object> lst = new List<object>();
 
@@ -100,7 +107,7 @@ public class Program
                                     }
 
                                     region.Entities = lst;
-                                    lstRegions.Add(region);
+                                     
                                 }
                             }
                         }
