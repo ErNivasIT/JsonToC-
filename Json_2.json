@@ -1,0 +1,454 @@
+{
+  "data": {
+    "page": {
+      "itemId": 274,
+      "publicationId": 5,
+      "url": "/index.html",
+      "rawContent": {
+        "data": {
+          "Id": "274",
+          "Namespace": "tcm",
+          "Title": "Home",
+          "PageTemplate": {
+            "Id": "230",
+            "Namespace": "tcm",
+            "Title": "Home Page",
+            "FileExtension": "html",
+            "RevisionDate": "2023-03-29T08:27:29.19Z",
+            "Metadata": {
+              "includes": {
+                "$type": "String[]",
+                "$values": [
+                  "system/include/header",
+                  "system/include/footer"
+                ]
+              },
+              "view": "GeneralPage"
+            }
+          },
+          "StructureGroupId": "5",
+          "UrlPath": "/index",
+          "Regions": [
+            {
+              "Name": "Hero",
+              "Entities": [
+                {
+                  "Id": "5737",
+                  "Namespace": "tcm",
+                  "ComponentTemplate": {
+                    "Id": "90",
+                    "Namespace": "tcm",
+                    "Title": "Carousel",
+                    "RevisionDate": "2023-05-02T13:24:44.27Z",
+                    "OutputFormat": "HTML Fragment",
+                    "Metadata": {
+                      "view": "Carousel"
+                    }
+                  },
+                  "Folder": {
+                    "Id": "62",
+                    "Title": "Homepage"
+                  },
+                  "Content": {
+                    "itemListElement": {
+                      "$type": "ContentModelData[]",
+                      "$values": [
+                        {
+                          "subheading": "Strategic Plan",
+                          "content": "FAF has released its strategic plan to guide its priorities over the next few years. Read and download the plan on our strategic plan home page.",
+                          "media": {
+                            "$type": "EntityModelData",
+                            "Id": "5517",
+                            "Namespace": "tcm",
+                            "ComponentTemplate": {
+                              "Id": "129",
+                              "Namespace": "tcm",
+                              "RevisionDate": "0001-01-01T00:00:00"
+                            },
+                            "Folder": {
+                              "Id": "61",
+                              "Title": "Large"
+                            },
+                            "BinaryContent": {
+                              "Url": "/media/First_tcm5-5517.jpg",
+                              "FileName": "First.jpg",
+                              "FileSize": 98342,
+                              "MimeType": "image/jpeg"
+                            },
+                            "SchemaId": "77"
+                          },
+                          "link": {
+                            "$type": "ContentModelData",
+                            "linkText": "MORE",
+                            "internalLink": {
+                              "$type": "EntityModelData",
+                              "Id": "304",
+                              "Namespace": "tcm",
+                              "ComponentTemplate": {
+                                "Id": "129",
+                                "Namespace": "tcm",
+                                "RevisionDate": "0001-01-01T00:00:00"
+                              },
+                              "Folder": {
+                                "Id": "64",
+                                "Title": "About"
+                              },
+                              "Content": {
+                                "name": "Head Office - London",
+                                "image": {
+                                  "$type": "EntityModelData",
+                                  "Id": "293",
+                                  "Namespace": "tcm",
+                                  "ComponentTemplate": {
+                                    "Id": "129",
+                                    "Namespace": "tcm",
+                                    "RevisionDate": "0001-01-01T00:00:00"
+                                  },
+                                  "Folder": {
+                                    "Id": "61",
+                                    "Title": "Large"
+                                  },
+                                  "BinaryContent": {
+                                    "Url": "/media/skyscrapers_tcm5-293.jpg",
+                                    "FileName": "skyscrapers.jpg",
+                                    "FileSize": 2119766,
+                                    "MimeType": "image/jpeg"
+                                  },
+                                  "SchemaId": "77"
+                                },
+                                "address": {
+                                  "$type": "RichTextData",
+                                  "Fragments": [
+                                    "\n\t\t<p>221B Baker Street,</p>\n\t\t\n\n\t\t<p>London,</p>\n\t\t\n\n\t\t<p>United Kingdom</p>\n\t"
+                                  ]
+                                },
+                                "telephone": "+44 1234 56789",
+                                "faxNumber": "+44 9876 65432",
+                                "email": "contact@abcde.fg"
+                              },
+                              "Metadata": {
+                                "location": {
+                                  "$type": "ContentModelData",
+                                  "latitude": "51.52381",
+                                  "longitude": "-0.158441",
+                                  "query": "221B Baker Street, London, United Kingdom"
+                                },
+                                "standardMeta": {
+                                  "$type": "ContentModelData",
+                                  "description": "Head office location",
+                                  "name": "Head Office",
+                                  "introText": "Head Office Location"
+                                }
+                              },
+                              "SchemaId": "78"
+                            },
+                            "alternateText": "Strategic Plan"
+                          },
+                          "bgimage": {
+                            "$type": "EntityModelData",
+                            "Id": "5721",
+                            "Namespace": "tcm",
+                            "ComponentTemplate": {
+                              "Id": "129",
+                              "Namespace": "tcm",
+                              "RevisionDate": "0001-01-01T00:00:00"
+                            },
+                            "Folder": {
+                              "Id": "344",
+                              "Title": "Background Images"
+                            },
+                            "BinaryContent": {
+                              "Url": "/media/bg1_tcm5-5721.jpg",
+                              "FileName": "bg1.jpg",
+                              "FileSize": 4731,
+                              "MimeType": "image/jpeg"
+                            },
+                            "SchemaId": "77"
+                          }
+                        },
+                        {
+                          "subheading": "2021 Annual Report",
+                          "content": "FAF Issues 2021 Annual Report: 50 Years of Progress",
+                          "media": {
+                            "$type": "EntityModelData",
+                            "Id": "5518",
+                            "Namespace": "tcm",
+                            "ComponentTemplate": {
+                              "Id": "129",
+                              "Namespace": "tcm",
+                              "RevisionDate": "0001-01-01T00:00:00"
+                            },
+                            "Folder": {
+                              "Id": "61",
+                              "Title": "Large"
+                            },
+                            "BinaryContent": {
+                              "Url": "/media/Second_tcm5-5518.jpg",
+                              "FileName": "Second.jpg",
+                              "FileSize": 121513,
+                              "MimeType": "image/jpeg"
+                            },
+                            "SchemaId": "77"
+                          },
+                          "link": {
+                            "$type": "ContentModelData",
+                            "linkText": "MORE",
+                            "internalLink": {
+                              "$type": "EntityModelData",
+                              "Id": "304",
+                              "Namespace": "tcm",
+                              "ComponentTemplate": {
+                                "Id": "129",
+                                "Namespace": "tcm",
+                                "RevisionDate": "0001-01-01T00:00:00"
+                              },
+                              "Folder": {
+                                "Id": "64",
+                                "Title": "About"
+                              },
+                              "Content": {
+                                "name": "Head Office - London",
+                                "image": {
+                                  "$type": "EntityModelData",
+                                  "Id": "293",
+                                  "Namespace": "tcm",
+                                  "ComponentTemplate": {
+                                    "Id": "129",
+                                    "Namespace": "tcm",
+                                    "RevisionDate": "0001-01-01T00:00:00"
+                                  },
+                                  "Folder": {
+                                    "Id": "61",
+                                    "Title": "Large"
+                                  },
+                                  "BinaryContent": {
+                                    "Url": "/media/skyscrapers_tcm5-293.jpg",
+                                    "FileName": "skyscrapers.jpg",
+                                    "FileSize": 2119766,
+                                    "MimeType": "image/jpeg"
+                                  },
+                                  "SchemaId": "77"
+                                },
+                                "address": {
+                                  "$type": "RichTextData",
+                                  "Fragments": [
+                                    "\n\t\t<p>221B Baker Street,</p>\n\t\t\n\n\t\t<p>London,</p>\n\t\t\n\n\t\t<p>United Kingdom</p>\n\t"
+                                  ]
+                                },
+                                "telephone": "+44 1234 56789",
+                                "faxNumber": "+44 9876 65432",
+                                "email": "contact@abcde.fg"
+                              },
+                              "Metadata": {
+                                "location": {
+                                  "$type": "ContentModelData",
+                                  "latitude": "51.52381",
+                                  "longitude": "-0.158441",
+                                  "query": "221B Baker Street, London, United Kingdom"
+                                },
+                                "standardMeta": {
+                                  "$type": "ContentModelData",
+                                  "description": "Head office location",
+                                  "name": "Head Office",
+                                  "introText": "Head Office Location"
+                                }
+                              },
+                              "SchemaId": "78"
+                            },
+                            "alternateText": "2021 Annual Report"
+                          },
+                          "bgimage": {
+                            "$type": "EntityModelData",
+                            "Id": "5722",
+                            "Namespace": "tcm",
+                            "ComponentTemplate": {
+                              "Id": "129",
+                              "Namespace": "tcm",
+                              "RevisionDate": "0001-01-01T00:00:00"
+                            },
+                            "Folder": {
+                              "Id": "344",
+                              "Title": "Background Images"
+                            },
+                            "BinaryContent": {
+                              "Url": "/media/bg2_tcm5-5722.jpg",
+                              "FileName": "bg2.jpg",
+                              "FileSize": 5785,
+                              "MimeType": "image/jpeg"
+                            },
+                            "SchemaId": "77"
+                          }
+                        },
+                        {
+                          "subheading": "FAF, FASB, and GASB Timeline",
+                          "content": "Highlights major FAF, FASB, and GASB events over more than four decades of U.S. standard setting.",
+                          "media": {
+                            "$type": "EntityModelData",
+                            "Id": "5522",
+                            "Namespace": "tcm",
+                            "ComponentTemplate": {
+                              "Id": "129",
+                              "Namespace": "tcm",
+                              "RevisionDate": "0001-01-01T00:00:00"
+                            },
+                            "Folder": {
+                              "Id": "61",
+                              "Title": "Large"
+                            },
+                            "BinaryContent": {
+                              "Url": "/media/six_tcm5-5522.jpg",
+                              "FileName": "six.jpg",
+                              "FileSize": 139027,
+                              "MimeType": "image/jpeg"
+                            },
+                            "SchemaId": "77"
+                          },
+                          "link": {
+                            "$type": "ContentModelData",
+                            "linkText": "MORE",
+                            "internalLink": {
+                              "$type": "EntityModelData",
+                              "Id": "304",
+                              "Namespace": "tcm",
+                              "ComponentTemplate": {
+                                "Id": "129",
+                                "Namespace": "tcm",
+                                "RevisionDate": "0001-01-01T00:00:00"
+                              },
+                              "Folder": {
+                                "Id": "64",
+                                "Title": "About"
+                              },
+                              "Content": {
+                                "name": "Head Office - London",
+                                "image": {
+                                  "$type": "EntityModelData",
+                                  "Id": "293",
+                                  "Namespace": "tcm",
+                                  "ComponentTemplate": {
+                                    "Id": "129",
+                                    "Namespace": "tcm",
+                                    "RevisionDate": "0001-01-01T00:00:00"
+                                  },
+                                  "Folder": {
+                                    "Id": "61",
+                                    "Title": "Large"
+                                  },
+                                  "BinaryContent": {
+                                    "Url": "/media/skyscrapers_tcm5-293.jpg",
+                                    "FileName": "skyscrapers.jpg",
+                                    "FileSize": 2119766,
+                                    "MimeType": "image/jpeg"
+                                  },
+                                  "SchemaId": "77"
+                                },
+                                "address": {
+                                  "$type": "RichTextData",
+                                  "Fragments": [
+                                    "\n\t\t<p>221B Baker Street,</p>\n\t\t\n\n\t\t<p>London,</p>\n\t\t\n\n\t\t<p>United Kingdom</p>\n\t"
+                                  ]
+                                },
+                                "telephone": "+44 1234 56789",
+                                "faxNumber": "+44 9876 65432",
+                                "email": "contact@abcde.fg"
+                              },
+                              "Metadata": {
+                                "location": {
+                                  "$type": "ContentModelData",
+                                  "latitude": "51.52381",
+                                  "longitude": "-0.158441",
+                                  "query": "221B Baker Street, London, United Kingdom"
+                                },
+                                "standardMeta": {
+                                  "$type": "ContentModelData",
+                                  "description": "Head office location",
+                                  "name": "Head Office",
+                                  "introText": "Head Office Location"
+                                }
+                              },
+                              "SchemaId": "78"
+                            },
+                            "alternateText": "FAF, FASB, and GASB Timeline"
+                          },
+                          "bgimage": {
+                            "$type": "EntityModelData",
+                            "Id": "5726",
+                            "Namespace": "tcm",
+                            "ComponentTemplate": {
+                              "Id": "129",
+                              "Namespace": "tcm",
+                              "RevisionDate": "0001-01-01T00:00:00"
+                            },
+                            "Folder": {
+                              "Id": "344",
+                              "Title": "Background Images"
+                            },
+                            "BinaryContent": {
+                              "Url": "/media/bg6_tcm5-5726.jpg",
+                              "FileName": "bg6.jpg",
+                              "FileSize": 7109,
+                              "MimeType": "image/jpeg"
+                            },
+                            "SchemaId": "77"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "MvcData": {
+                    "ViewName": "Carousel"
+                  },
+                  "XpmMetadata": {
+                    "ComponentID": "tcm:5-5737",
+                    "ComponentModified": "2023-04-20T13:59:57.44Z",
+                    "ComponentTemplateID": "tcm:5-90-32",
+                    "ComponentTemplateModified": "2023-05-02T13:24:44.27Z",
+                    "IsRepositoryPublished": false
+                  },
+                  "SchemaId": "81"
+                }
+              ],
+              "Regions": [],
+              "MvcData": {
+                "ViewName": "Hero"
+              },
+              "XpmMetadata": {
+                "FullyQualifiedName": "Hero"
+              },
+              "SchemaId": "91"
+            },
+            {
+              "Name": "Article",
+              "Entities": [],
+              "Regions": [],
+              "MvcData": {
+                "ViewName": "Article"
+              },
+              "XpmMetadata": {
+                "FullyQualifiedName": "Article"
+              },
+              "SchemaId": "192"
+            }
+          ],
+          "MvcData": {
+            "ViewName": "GeneralPage"
+          },
+          "XpmMetadata": {
+            "PageID": "tcm:5-274-64",
+            "PageModified": "2023-05-10T06:50:00.92Z",
+            "PageTemplateID": "tcm:5-230-128",
+            "PageTemplateModified": "2023-03-29T08:27:29.19Z"
+          },
+          "Metadata": {
+            "sitemapKeyword": {
+              "$type": "KeywordModelData",
+              "Id": "321",
+              "Namespace": "tcm"
+            }
+          },
+          "SchemaId": "193"
+        }
+      }
+    }
+  }
+}
